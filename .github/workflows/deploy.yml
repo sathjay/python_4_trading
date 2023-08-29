@@ -24,6 +24,7 @@ jobs:
           echo "Building Docker image..."
           docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/dash-app:latest .
           echo "Pushing Docker image to GCR..."
+          gcloud auth configure-docker ${{ secrets.GCP_SA_KEY }}
           docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/dash-app:latest
 
       - name: Deploy to Cloud Run
