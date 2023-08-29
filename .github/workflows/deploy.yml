@@ -19,39 +19,15 @@ jobs:
         with:
           credentials_json: "${{ secrets.GCP_SA_KEY }}"
 
-
-    name: Deploy to Google Cloud Run
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - id: "auth"
-        name: "Authenticate to Google Cloud"
-        uses: "google-github-actions/auth@v1"
-        with:
-          credentials_json: "${{ secrets.GCP_SA_KEY }}"
-
-     
       - name: Build and push Docker image to Google Container Registry (GCR)
         env:
-            GOOGLE_PROJECT: ${{ secrets.GCP_PROJECT_ID }}
+          GOOGLE_PROJECT: ${{ secrets.GCP_PROJECT_ID }}
         run: |
           gcloud auth configure-docker us-central1-docker.pkg.dev
           echo "Building Docker image..."
           docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/dash-app:latest .
           echo "Pushing Docker image to GCR..."
           docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/dash-app:latest
-
 
       - name: Deploy to Cloud Run
         run: |
