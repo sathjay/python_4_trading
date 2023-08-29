@@ -33,7 +33,7 @@ ML_tab_LO = html.Div([
 
         html.P('From the dropdown menu below, users can select various ML models, stocks, input features, and model parameters to predict the magnitude or direction of stock price changes for the next day.'),
         html.Br(),
-        html.P('Note of Caution:Predicting future stock prices is an extremely challenging task. Often, stock prices are non-stationary, meaning they can change unpredictably over time. Numerous factors, including geo-political events, industrial accidents, and significant news events, can influence stock prices. Many of these factors are random and difficult to model accurately.', className='note'),
+        html.P('Note of Caution: Predicting future stock prices is an extremely challenging task. Often, stock prices are non-stationary, meaning they can change unpredictably over time. Numerous factors, including geo-political events, industrial accidents, and significant news events, can influence stock prices. Many of these factors are random and difficult to model accurately.', className='note'),
 
         html.Label(['Select the ML Model to predict from the options below: '],
                    style={'font-weight': 'bold'}),
