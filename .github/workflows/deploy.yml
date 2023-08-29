@@ -22,7 +22,7 @@ jobs:
 
       - name: Authenticate with Google Container Registry
         run: |
-          echo "${{ secrets.GCP_SA_KEY }}" | gcloud auth activate-service-account --key-file=-
+          echo "${{ secrets.GOOGLE_CREDENTIALS }}" | gcloud auth activate-service-account --key-file=-
           gcloud auth configure-docker
 
       - name: Build and push Docker image to Google Container Registry (GCR)
