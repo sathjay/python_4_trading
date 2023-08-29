@@ -1,0 +1,277 @@
+body {
+  background-color: #d6d6d6;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+}
+
+H5 {
+  font-weight: 500;
+}
+
+.title_container {
+  display: flex;
+  flex-direction: row;
+  height: 86px;
+  background-color: #0c89cd;
+  color: white;
+  margin-top: -10px;
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.image {
+  margin-left: 1%;
+  height: 62px;
+}
+
+.title {
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
+.tab_container {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #0c89cd;
+}
+
+.tab_bar {
+  margin-right: 10%;
+  height: 78px;
+  margin-top: -6px;
+}
+
+.header_container {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.main_container {
+  margin-top: -10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 4%;
+  padding-top: 20px;
+  padding-right: 10%;
+  padding-left: 12%;
+  background-color: rgb(186, 228, 242);
+  padding-bottom: 35px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.backtest_container {
+  margin-top: -10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 20px;
+  padding-right: 10%;
+  padding-left: 12%;
+  background-color: rgb(186, 228, 242);
+  padding-bottom: 25px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.aboutme_container_first_section {
+  margin-top: 25px;
+}
+
+.description {
+  flex: 1; /* This will prevent the text container from growing and shrinking */
+  margin-left: 20px;
+}
+
+.reference {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.anchor {
+  font-size: 25px;
+}
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+
+.anchor_r {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+h4 {
+  margin-top: 10px;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  padding-right: 8%;
+  text-align: justify;
+}
+
+label {
+  margin-top: 14px;
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.note {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.content_divider {
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15px;
+  border-bottom: 1px solid darkgray;
+}
+
+.dropdown_box {
+  width: 60%;
+  padding-bottom: 8px;
+}
+
+.slider_container {
+  width: 60%;
+  padding-bottom: 8px;
+}
+
+.rc-slider-mark-text {
+  font-size: 17px;
+  color: black;
+}
+
+.rc-slider-track {
+  background-color: #ff5733 !important;
+}
+
+.rc-slider-handle {
+  border: solid 2px #ff5733 !important;
+  background-color: #fff !important;
+}
+
+.button {
+  background-color: #f5f5f5ee;
+  color: black;
+  border: 2px solid black;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #0c89cd;
+  color: white;
+  font-size: 14px;
+}
+
+.stationary {
+  margin-top: 10px;
+}
+
+.container_3d_graph_input_feature {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.content_title {
+  margin-top: 20px;
+}
+
+.input_feature_3d_drop_down {
+  width: 20%;
+}
+
+.table_container {
+  padding-right: 8%;
+}
+
+.container_3d_graph_input_feature {
+  margin-bottom: 25px;
+}
+.submit_button {
+  background-color: rgb(153, 104, 228);
+  color: white;
+  font-size: 14px;
+}
+
+.market_summary {
+  margin-top: 25px;
+  margin-right: 35px;
+}
+
+.summary_board {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 30%;
+  height: 20vh;
+  border: black solid 1px;
+  background-color: white;
+}
+
+.card_head_row {
+  display: flex;
+  flex-direction: row;
+  height: 33%;
+}
+
+.logo {
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.card_heading {
+  text-decoration: underline;
+  font-size: 25px;
+  margin-left: 6%;
+  margin-top: 6%;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+}
+
+.footerContainer {
+  background-color: #f5f5f5ee;
+  height: 22px;
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 6px;
+  padding-left: 65px;
+}
+
+.footerContent {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 12px;
+  font-weight: 500;
+  color: #008cba !important;
+}
