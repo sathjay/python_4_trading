@@ -20,10 +20,11 @@ about_me_LO = html.Div([
 
             html.P("I am Sathya Jayagopi, a seasoned Software Developer with over 12 years of experience spanning Software Development and Test Management. My passion lies in crafting Interactive Data Analytic web applications, where I take immense pleasure in uncovering hidden patterns within intricate data sets, revealing actionable insights. As a tech enthusiast and lifelong learner, I'm always on the hunt for the latest advancements in the ever-evolving landscape of technology. My intrigue with the intricacies of finance has led me to channel my technical prowess into building web app like this website, aiming to educate others in technology and finance."),
 
-            html.P([html.A(
-                "My Github", href='https://www.github.com/sathjay?tab=repositories', target='_blank')], className='anchor'),
-            html.P([html.A(
-                "LinkedIn", href='https://www.linkedin.com/in/sathya-jayagopi/', target='_blank')], className='anchor'),
+            html.P([html.A("LinkedIn", href='https://www.linkedin.com/in/sathya-jayagopi/',
+                           target='_blank', className='libutton')], className='home_text'),
+
+            html.P([html.A("GitHub", href='https://github.com/sathjay?tab=repositories',
+                           target='_blank', className='libutton')], className='home_text'),
 
         ], className='description')
 

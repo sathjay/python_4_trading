@@ -175,6 +175,23 @@ label {
   font-size: 14px;
 }
 
+.libutton {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7px;
+  text-align: center;
+  outline: none;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  width: 148px;
+  height: 30px;
+  border-radius: 16px;
+  background-color: #044383;
+  font-family: "SF Pro Text", Helvetica, sans-serif;
+}
+
 .stationary {
   margin-top: 10px;
 }
