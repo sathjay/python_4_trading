@@ -51,7 +51,8 @@ for year in df['Year'].unique():
 
 def blank_fig():
     fig = go.Figure(go.Scatter(x=[], y=[]))
-    fig.update_layout(template=None)
+    fig.update_layout(template=None, plot_bgcolor='rgb(186, 228, 242)',
+                      paper_bgcolor='rgb(186, 228, 242)')
     fig.update_xaxes(showgrid=False, showticklabels=False, zeroline=False)
     fig.update_yaxes(showgrid=False, showticklabels=False, zeroline=False)
 
@@ -88,6 +89,7 @@ cluster_analysis_LO = html.Div([
                  className='dropdown_box',
                  ),
 
+    html.Br(),
     html.Div([], className='content_divider'),
     html.Br(),
 
@@ -122,38 +124,38 @@ cluster_analysis_LO = html.Div([
 
     ], className='container_3d_graph_input_feature'),
 
-    dcc.Graph(id='graph_3d', figure=blank_fig(),
-              style={'width': '90%', 'height': '66vh', 'padding-top': '10px'}),
-    html.Br(),
+    dcc.Loading(children=[
+        dcc.Graph(id='graph_3d', figure=blank_fig(), config={'displayModeBar': False},
+                style={'width': '90%', 'height': '62vh', 'padding-top': '5px'}),
 
+        html.Br(),
+        html.Div(id='cluster_analysis_table_label'),
+        html.Br(),
+        html.Div(
+            dash_table.DataTable(id='cluster_table',
+                                 filter_action="native",
+                                 sort_action="native",
+                                 sort_mode="multi",
+                                 editable=False,
+                                 style_table={'overflowY': 'scroll',
+                                              'maxHeight': '600px'},
+                                 style_header={'backgroundColor': 'blue',
+                                               'fontWeight': 'bold',
+                                               'color': 'white',
+                                               'fontSize': '16px',
+                                               'whiteSpace': 'normal',
+                                               'height': 'auto',
+                                               },
+                                 style_data={
+                                     'color': 'black',
+                                     'backgroundColor': 'white',
+                                     'fontSize': '14px',
+                                 },
+                                 style_cell={'textAlign': 'center'},
 
-    html.Div(id='cluster_analysis_table_label'),
-    html.Br(),
-    html.Div(
-        dash_table.DataTable(id='cluster_table',
-                             filter_action="native",
-                             sort_action="native",
-                             sort_mode="multi",
-                             editable=False,
-                             style_table={'overflowY': 'scroll',
-                                          'maxHeight': '600px'},
-                             style_header={'backgroundColor': 'blue',
-                                                              'fontWeight': 'bold',
-                                                              'color': 'white',
-                                                              'fontSize': '16px',
-                                                              'whiteSpace': 'normal',
-                                                              'height': 'auto',
-                                           },
-                             style_data={
-                                 'color': 'black',
-                                 'backgroundColor': 'white',
-                                                    'fontSize': '14px',
-                             },
-                             style_cell={'textAlign': 'center'},
+                                 ), className='table_container'),
 
-                             ), className='table_container'),
-
-
+    ], type="circle", fullscreen=True),
 
 ], className='main_container')
 
@@ -224,6 +226,6 @@ def graph_3d(selected_year, selected_metrics, x_axis, y_axis, z_axis):
     s_columns = [{'name': col, 'id': col} for col in dff.columns]
     s_data = dff.to_dict(orient='records')
 
-    label = html.P('Cluster Analysis Summary:')
+    label = html.P('Cluster Analysis Summary with Cluster Labels:')
 
     return fig, label, s_columns, s_data,

@@ -8,6 +8,7 @@ import plotly.graph_objects as go
 import yfinance as yf
 
 from app import app
+card_height = '10vh'
 
 home_LO = html.Div([
     html.Div([
@@ -40,7 +41,7 @@ home_LO = html.Div([
                     dcc.Graph(id='indicator-graph1', figure={},
                               config={
                         'displayModeBar': False},
-                        style={'width': '85%', 'height': '12vh'})
+                        style={'width': '85%', 'height': card_height})
                 ], className='card'),
 
                 html.Div([
@@ -53,7 +54,7 @@ home_LO = html.Div([
                     dcc.Graph(id='indicator-graph2', figure={},
                               config={
                         'displayModeBar': False},
-                        style={'width': '85%', 'height': '12vh'})
+                        style={'width': '85%', 'height': card_height})
                 ], className='card'),
 
                 html.Div([
@@ -66,7 +67,7 @@ home_LO = html.Div([
                     dcc.Graph(id='indicator-graph3', figure={},
                               config={
                         'displayModeBar': False},
-                        style={'width': '85%', 'height': '12vh', })
+                        style={'width': '85%', 'height': card_height, })
                 ], className='card'),
 
             ], className='summary_board'),
@@ -85,7 +86,7 @@ home_LO = html.Div([
 
                     dcc.Graph(id='indicator-graph4', figure={},
                               config={'displayModeBar': False},
-                              style={'width': '85%', 'height': '12vh'})
+                              style={'width': '85%', 'height': card_height})
                 ], className='card'),
 
                 html.Div([
@@ -99,7 +100,7 @@ home_LO = html.Div([
                     dcc.Graph(id='indicator-graph5', figure={},
                               config={
                         'displayModeBar': False},
-                        style={'width': '85%', 'height': '12vh'})
+                        style={'width': '85%', 'height': card_height})
                 ], className='card'),
 
                 html.Div([
@@ -113,7 +114,7 @@ home_LO = html.Div([
                     dcc.Graph(id='indicator-graph6', figure={},
                               config={
                         'displayModeBar': False},
-                        style={'width': '85%', 'height': '12vh', })
+                        style={'width': '85%', 'height': card_height, })
                 ], className='card'),
 
             ], className='summary_board'),
@@ -131,7 +132,7 @@ home_LO = html.Div([
                     dcc.Graph(id='indicator-graph7', figure={},
                               config={
                         'displayModeBar': False},
-                        style={'width': '85%', 'height': '12vh'})
+                        style={'width': '85%', 'height': card_height})
                 ], className='card'),
 
                 html.Div([
@@ -145,7 +146,7 @@ home_LO = html.Div([
                     dcc.Graph(id='indicator-graph8', figure={},
                               config={
                         'displayModeBar': False},
-                        style={'width': '85%', 'height': '12vh'})
+                        style={'width': '85%', 'height': card_height})
                 ], className='card'),
 
                 html.Div([
@@ -158,7 +159,7 @@ home_LO = html.Div([
                     dcc.Graph(id='indicator-graph9', figure={},
                               config={
                         'displayModeBar': False},
-                        style={'width': '85%', 'height': '12vh', })
+                        style={'width': '85%', 'height': card_height, })
                 ], className='card'),
 
 
@@ -210,7 +211,7 @@ def update_indicator(timer):
     yes_close = AMZN['AMZN'].iloc[-2]
 
     delta_font = {'size': 22}
-    number_font = {'size': 32}
+    number_font = {'size': 28}
 
     fig = go.Figure(go.Indicator(
         mode="number+delta",
