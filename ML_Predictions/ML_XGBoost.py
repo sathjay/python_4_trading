@@ -123,8 +123,8 @@ ML_XGBoost_LO = html.Div([
 
         html.Div(id='stationary', className='stationary'),
 
-        dcc.Graph(id='seasonality_decomposition', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '90%', 'height': '80vh'}),
+        dcc.Graph(id='seasonality_decomposition', figure=blank_fig(),
+                  config={'displayModeBar': False},),
 
         html.Br(),
         html.Div([], className='content_divider'),
@@ -150,12 +150,12 @@ ML_XGBoost_LO = html.Div([
 
         html.Br(),
 
-        dcc.Graph(id='confusion_matrix_1', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '90%', 'height': '40vh'}),
+        dcc.Graph(id='confusion_matrix_1', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Hr(),
-        dcc.Graph(id='direction_over_time', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '90%', 'height': '80vh'}),
+        dcc.Graph(id='direction_over_time', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
     ], type="circle", fullscreen=True),
 

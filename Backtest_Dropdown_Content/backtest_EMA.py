@@ -146,13 +146,13 @@ EMA_LO = html.Div([
         html.Div(id='EMA_note', children=[]),
 
         html.Hr(),
-        dcc.Graph(id='entry_and_exit_EMA', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='entry_and_exit_EMA', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
 
         html.Hr(),
-        dcc.Graph(id='pnl_chart_EMA', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='pnl_chart_EMA', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
     ], type="circle", fullscreen=True),
 

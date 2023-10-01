@@ -22,7 +22,7 @@ home_LO = html.Div([
 
     html.Div([], className='content_divider'),
 
-    html.H5("Popular Stocks- Price Dashboard:"),
+    html.H5("Popular Stocks- Price Dashboard:", id='dashboards_title'),
 
     dcc.Loading(children=[
         html.Div([

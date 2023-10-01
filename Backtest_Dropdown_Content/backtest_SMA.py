@@ -148,11 +148,11 @@ SMA_LO = html.Div([
         html.Div(id='SMA_note', children=[]),
 
         dcc.Graph(id='entry_and_exit_SMA', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+                  ),
 
         html.Hr(),
         dcc.Graph(id='pnl_chart_SMA', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+                  ),
         html.Hr(),
 
     ], type="circle", fullscreen=True),

@@ -325,8 +325,8 @@ portfolio_opt_LO = html.Div([
         html.Br(),
 
 
-        dcc.Graph(id='stock_return_graph_PO', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '90%', 'height': '68vh'}),
+        dcc.Graph(id='stock_return_graph_PO', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
         html.Br(),
@@ -351,14 +351,13 @@ portfolio_opt_LO = html.Div([
         html.Div([], className='content_divider'),
         html.Br(),
 
-        dcc.Graph(id='my_graph', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '76vh'}),
+        dcc.Graph(id='my_graph', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
         html.Br(),
 
-        html.Div([dcc.Graph(id='pie_chart', figure=blank_fig(), config={'displayModeBar': False},
-                            style={'width': '92%', 'height': '48vh'})
+        html.Div([dcc.Graph(id='pie_chart', figure=blank_fig(), config={'displayModeBar': False})
                   ]),
 
         html.Div([], className='content_divider'),
@@ -384,8 +383,8 @@ portfolio_opt_LO = html.Div([
         html.Div([], className='content_divider'),
         html.Br(),
 
-        dcc.Graph(id='portfolio_performance_graph', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='portfolio_performance_graph',
+                  figure=blank_fig(), config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
         html.Br(),

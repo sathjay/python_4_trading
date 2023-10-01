@@ -305,13 +305,13 @@ MACD_LO = html.Div([
         html.Div(id='MACD_note', children=[]),
 
         html.Hr(),
-        dcc.Graph(id='entry_and_exit_MACD', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '74vh'}),
+        dcc.Graph(id='entry_and_exit_MACD', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
 
         html.Hr(),
-        dcc.Graph(id='pnl_chart_MACD', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '74vh'}),
+        dcc.Graph(id='pnl_chart_MACD', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
     ], type="circle", fullscreen=True),
 

@@ -152,38 +152,38 @@ stock_perf_comp_LO = html.Div([
         html.H5(id='output', className='content_title'),
 
 
-        dcc.Graph(id='return_distribution', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '90%', 'height': '80vh'}),
+        dcc.Graph(id='return_distribution', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
         html.Br(),
 
-        dcc.Graph(id='stock_return_graph', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='stock_return_graph', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
         html.Br(),
 
-        dcc.Graph(id='rolling_volatility_graph', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='rolling_volatility_graph', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
         html.Br(),
 
-        dcc.Graph(id='sharpe_ratio_graph', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='sharpe_ratio_graph', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
         html.Br(),
 
-        dcc.Graph(id='sortino_vol_graph', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='sortino_vol_graph', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
         html.Br(),
 
-        dcc.Graph(id='sortino_ratio_graph', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='sortino_ratio_graph', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
     ], type="circle", fullscreen=True),
 

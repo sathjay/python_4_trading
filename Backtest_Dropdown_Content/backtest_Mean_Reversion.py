@@ -275,12 +275,12 @@ MR_LO = html.Div([
         html.Div(id='MR_note', children=[]),
 
         html.Br(),
-        dcc.Graph(id='mean_revertion_plot', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='mean_revertion_plot', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Br(),
-        dcc.Graph(id='payoff_plot_MR', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='payoff_plot_MR', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
     ], type="circle", fullscreen=True),
 ])

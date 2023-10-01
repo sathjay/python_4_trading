@@ -247,11 +247,11 @@ ADX_LO = html.Div([
         html.Label(id='Selected_Value_ADX'),
 
         html.Br(),
-        dcc.Graph(id='entry_and_exit_ADX', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='entry_and_exit_ADX', figure=blank_fig(),
+                  config={'displayModeBar': False}),
         html.Br(),
-        dcc.Graph(id='pnl_chart_ADX', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='pnl_chart_ADX', figure=blank_fig(),
+                  config={'displayModeBar': False}),
         html.Br(),
     ], type="circle", fullscreen=True),
 

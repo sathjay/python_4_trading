@@ -292,3 +292,92 @@ footer {
   font-weight: 500;
   color: #008cba !important;
 }
+
+#price_chart,
+#daily_return_over_time,
+#daily_return_distribution,
+#QQ_Plot,
+#stock_return_graph,
+#rolling_volatility_graph,
+#sharpe_ratio_graph,
+#sortino_vol_graph,
+#sortino_ratio_graph,
+#stock_return_graph_PO,
+#my_graph,
+#portfolio_performance_graph {
+  width: 92%;
+  height: 68vh;
+}
+#pie_chart {
+  width: 92%;
+  height: 50vh;
+}
+
+/* #entry_and_exit_ADX,
+#pnl_chart_ADX,
+#entry_and_exit_DEMA,
+#pnl_chart_DEMA,
+#entry_and_exit_EMA,
+#pnl_chart_EMA,
+#mean_revertion_plot,
+#payoff_plot_MR,
+#entry_and_exit_MFI,
+#pnl_chart_MFI,
+#entry_and_exit_OBV,
+#pnl_chart_OBV,
+#entry_and_exit_RSI,
+#pnl_chart_RSI,
+#entry_and_exit_SMA,
+#pnl_chart_SMA {
+  width: 92%;
+  height: 68vh;
+}
+
+#entry_and_exit_MACD,
+#pnl_chart_MACD,
+#seasonality_decomposition{
+  width: 92%;
+  height: 74vh;
+} */
+
+@media (max-width: 900px) {
+  #dashboards_title,
+  .market_summary {
+    display: none;
+  }
+
+  .header_container {
+    position: relative;
+  }
+
+  .main_container {
+    margin-top: -10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+    padding-top: 20px;
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: rgb(186, 228, 242);
+    padding-bottom: 35px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  #price_chart,
+  #daily_return_over_time,
+  #daily_return_distribution,
+  #QQ_Plot,
+  #stock_return_graph,
+  #rolling_volatility_graph,
+  #sharpe_ratio_graph,
+  #sortino_vol_graph,
+  #sortino_ratio_graph,
+  #stock_return_graph_PO,
+  #pie_chart,
+  #portfolio_performance_graph {
+    width: 98%;
+    height: 92vh;
+  }
+}

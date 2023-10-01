@@ -97,23 +97,23 @@ stock_daily_return_LO = html.Div([
 
         html.Br(),
 
-        dcc.Graph(id='price_chart', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='price_chart', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
 
-        dcc.Graph(id='daily_return_over_time', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='daily_return_over_time', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
 
-        dcc.Graph(id='daily_return_distribution', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='daily_return_distribution', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Div([], className='content_divider'),
 
-        dcc.Graph(id='QQ_Plot', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='QQ_Plot', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.H5(id='is_normal', className='content_title'),
 

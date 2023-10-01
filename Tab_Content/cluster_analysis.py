@@ -125,8 +125,8 @@ cluster_analysis_LO = html.Div([
     ], className='container_3d_graph_input_feature'),
 
     dcc.Loading(children=[
-        dcc.Graph(id='graph_3d', figure=blank_fig(), config={'displayModeBar': False},
-                style={'width': '90%', 'height': '62vh', 'padding-top': '5px'}),
+        dcc.Graph(id='graph_3d', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
         html.Br(),
         html.Div(id='cluster_analysis_table_label'),

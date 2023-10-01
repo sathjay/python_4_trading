@@ -245,12 +245,10 @@ OBV_LO = html.Div([
 
         html.Br(),
         dcc.Graph(id='entry_and_exit_OBV', figure=blank_fig(),
-                  config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+                  config={'displayModeBar': False}),
         html.Br(),
         dcc.Graph(id='pnl_chart_OBV', figure=blank_fig(),
-                  config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+                  config={'displayModeBar': False}),
         html.Br(),
 
     ], type="circle", fullscreen=True),

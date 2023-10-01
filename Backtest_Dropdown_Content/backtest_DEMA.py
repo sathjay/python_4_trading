@@ -144,13 +144,12 @@ DEMA_LO = html.Div([
 
         html.Hr(),
         dcc.Graph(id='entry_and_exit_DEMA', figure=blank_fig(),
-                  config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+                  config={'displayModeBar': False}),
 
 
         html.Hr(),
-        dcc.Graph(id='pnl_chart_DEMA', figure=blank_fig(), config={'displayModeBar': False},
-                  style={'width': '92%', 'height': '68vh'}),
+        dcc.Graph(id='pnl_chart_DEMA', figure=blank_fig(),
+                  config={'displayModeBar': False}),
 
     ], type="circle", fullscreen=True),
 
