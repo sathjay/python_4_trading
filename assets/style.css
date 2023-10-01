@@ -303,11 +303,11 @@ footer {
 #sortino_vol_graph,
 #sortino_ratio_graph,
 #stock_return_graph_PO,
-#my_graph,
 #portfolio_performance_graph {
   width: 92%;
   height: 68vh;
 }
+
 #pie_chart {
   width: 92%;
   height: 50vh;
