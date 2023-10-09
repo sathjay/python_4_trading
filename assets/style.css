@@ -303,7 +303,9 @@ footer {
 #sortino_vol_graph,
 #sortino_ratio_graph,
 #stock_return_graph_PO,
-#portfolio_performance_graph {
+#portfolio_performance_graph,
+#seasonality_decomposition,
+#direction_over_time {
   width: 92%;
   height: 68vh;
 }
@@ -313,32 +315,10 @@ footer {
   height: 50vh;
 }
 
-/* #entry_and_exit_ADX,
-#pnl_chart_ADX,
-#entry_and_exit_DEMA,
-#pnl_chart_DEMA,
-#entry_and_exit_EMA,
-#pnl_chart_EMA,
-#mean_revertion_plot,
-#payoff_plot_MR,
-#entry_and_exit_MFI,
-#pnl_chart_MFI,
-#entry_and_exit_OBV,
-#pnl_chart_OBV,
-#entry_and_exit_RSI,
-#pnl_chart_RSI,
-#entry_and_exit_SMA,
-#pnl_chart_SMA {
+#my_graph {
   width: 92%;
-  height: 68vh;
+  height: 76vh;
 }
-
-#entry_and_exit_MACD,
-#pnl_chart_MACD,
-#seasonality_decomposition{
-  width: 92%;
-  height: 74vh;
-} */
 
 @media (max-width: 900px) {
   #dashboards_title,
